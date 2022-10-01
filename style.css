@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(25, 25, 25);
+    color: rgb(248, 248, 248);
+}
+
+body, html {
+    height: 100%;
+    font-size: calc(12px + 0.4vw);
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #6A98F0 !important;
+}
+
+.navbar-brand img{
+    flex-basis: 100px;
+    max-width: 35px;
+}
+
+.navbar-nav {
+    padding-left: 800px;
+}
+
+.navbar-toggler-icon img{
+    width: 100%;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 991.98px) { 
+    .navbar-nav {
+        padding-left: 0px;
+        background-color: rgb(35, 35, 35);
+        box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.container-meio {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100vh;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+
+.esquerda {
+    width: 500px;
+}
+
+.textos h6 {
+    font-size: 16px;
+    margin: 0px;
+    line-height: 150%;
+    color: rgb(248, 248, 248);
+}
+
+.textos h1 {
+    margin: -4px 0px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.textos h4 {
+    margin-top: 10px;
+    font-size: 1.06rem;
+    letter-spacing: 3px;
+}
+
+.esquerda button {
+    background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+    color: rgb(248, 248, 248);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    margin: 0px;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.esquerda button:hover {
+    transform: scale(1.1);
+}
+
+.botao {
+    margin-top: 40px;
+}
+
+.sociais {
+    margin-top: 40px;
+}
+
+.sociais .fa-brands {
+    font-size: 1.5em;
+    color: rgb(109, 131, 242) !important;
+    padding-left: 20px;
+}
+
+.sociais .github {
+    padding-left: 0px;
+}
+
+.sociais .fa-brands:hover {
+    transition: ease-in-out 0.4s;
+    color: rgb(255, 255, 255) !important;
+}
+
+.background {
+    width: 40%;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: -1;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.coding {
+    width: 100%;
+    padding: 30px 35px;
+    border-radius: 10px;
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+}
+
+.cooding pre {
+    font-size: 0.8rem;
+    font-family: Montserrat, sans-serif;
+    color: rgb(248, 248, 248);
+}
+
+@media (max-width: 1200px) {
+    .container-meio {
+        margin-top: 100px;
+    }
+
+    .esquerda {
+        text-align: center;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .coding {
+        padding: 35px 15px;
+    }
+ }
+
+
+
+ .Card {
+    margin: 10px;
+    flex: 1 1 200px;
+    max-width: 300px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+    border-radius: 10px;
+}
+
+.texto-tec h2{
+    margin: 100px auto;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+    color: rgb(248, 248, 248);
+}
+
+.card-1 {
+    margin: 10px;
+    flex: 1 1 200px;
+    max-width: 250px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+    border-radius: 10px;
+}
+
+.card-1 img {
+    width: 150px;
+}
+
+.card-1 h3 {
+    font-weight: normal;
+    color: rgb(248, 248, 248);
+    margin: 10px 0px;
+    line-height: 140%;
+}
