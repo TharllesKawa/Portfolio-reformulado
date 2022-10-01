@@ -244,32 +244,6 @@ pre {
     .cards {
         justify-content: center !important;
     }
-
-    .SFwcK {
-        width: unset;
-        height: 90%;
-        inset: 100px -16px 0px;
-    }
-}
-
-
-.SFwcK {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    min-height: 500px;
-    background: rgb(35, 35, 35);
-    transform: skewY(-3deg);
-    z-index: -1;
-    pointer-events: none;
-}
-
-.dppeUY .skills__word-clouds {
-    z-index: -1;
-}
-
-.parallax-inner {
-    transform: translate3d(0%, -315.131px, 0px);
 }
 
 #tec {
