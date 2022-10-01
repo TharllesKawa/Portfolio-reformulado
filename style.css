@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0px;
+    line-height: 140%;
+    color: rgb(248, 248, 248);
+}
+
 body {
     overflow-x: hidden;
     background-color: rgb(25, 25, 25);
@@ -198,25 +204,6 @@ pre {
     }
  }
 
-
-
- .Card {
-    margin: 10px;
-    flex: 1 1 200px;
-    max-width: 300px;
-    height: 300px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(35, 35, 35);
-    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
-    border-radius: 10px;
-}
-
 .texto-tec h2{
     margin: 100px auto;
     font-size: 1.5rem;
@@ -229,50 +216,72 @@ pre {
 .cards {
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
     -webkit-box-align: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.card-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
-    color: rgb(248, 248, 248);
+    margin-bottom: 200px;
 }
 
 .card-1 {
     margin: 10px;
-    flex: 1 1 200px;
-    max-width: 250px;
-    height: 250px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(35, 35, 35);
-    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
-    border-radius: 10px;
+    transition: ease-in-out 0.5s;
 }
 
 .card-1 img {
-    width: 150px;
+    width: 120px;
 }
 
-.card-1 h3 {
-    font-weight: normal;
-    color: rgb(248, 248, 248);
-    margin: 10px 0px;
-    line-height: 140%;
+.card-1:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 50px 17px rgba(0,0,0,0.62); 
+    box-shadow: 5px 5px 50px 17px rgba(0,0,0,0.62);
+    font-weight: 600;
 }
 
 @media (max-width: 991.98px) {
     .cards {
         justify-content: center !important;
     }
+
+    .SFwcK {
+        width: unset;
+        height: 90%;
+        inset: 100px -16px 0px;
+    }
+}
+
+
+.SFwcK {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    min-height: 500px;
+    background: rgb(35, 35, 35);
+    transform: skewY(-3deg);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.dppeUY .skills__word-clouds {
+    z-index: -1;
+}
+
+.parallax-inner {
+    transform: translate3d(0%, -315.131px, 0px);
+}
+
+#tec {
+    margin-bottom: 60px;
+}
+
+
+.texto-sobre h2{
+    margin: 100px auto;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    letter-spacing: 1px;
 }
