@@ -270,3 +270,9 @@ pre {
     margin: 10px 0px;
     line-height: 140%;
 }
+
+@media (max-width: 991.98px) {
+    .cards {
+        justify-content: center !important;
+    }
+}
